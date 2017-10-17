@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "209545322803",
+    "firebase_url": "https://friluftsmuseet-ae42f.firebaseio.com",
+    "project_id": "friluftsmuseet-ae42f",
+    "storage_bucket": "friluftsmuseet-ae42f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209545322803:android:0671eaca9bbf1ab8",
+        "android_client_info": {
+          "package_name": "com.appkompaniet.gylsboda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209545322803-grkdj1lo5aojq6q6d9csi97cvmluo2gu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appkompaniet.gylsboda",
+            "certificate_hash": "203c80117fb0bcd02f17791ca03946773dca292a"
+          }
+        },
+        {
+          "client_id": "209545322803-bmq1lrddqm5roc717evqdjoas3jbleg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByWncBSfHmZ-6_Br8akUkTfUF5AOeAvcQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209545322803-opg8g2ebss0l5k71c34rvurj1appk5s7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appkompaniet.Gylsboda"
+              }
+            },
+            {
+              "client_id": "209545322803-bmq1lrddqm5roc717evqdjoas3jbleg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209545322803:android:a8297d07e1814388",
+        "android_client_info": {
+          "package_name": "com.appkompaniet.gylsbodafriluftsmuseum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209545322803-5qonqvtdv2pkdqo36ts66521ts5o4pgb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appkompaniet.gylsbodafriluftsmuseum",
+            "certificate_hash": "203c80117fb0bcd02f17791ca03946773dca292a"
+          }
+        },
+        {
+          "client_id": "209545322803-bmq1lrddqm5roc717evqdjoas3jbleg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByWncBSfHmZ-6_Br8akUkTfUF5AOeAvcQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209545322803-opg8g2ebss0l5k71c34rvurj1appk5s7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appkompaniet.Gylsboda"
+              }
+            },
+            {
+              "client_id": "209545322803-bmq1lrddqm5roc717evqdjoas3jbleg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
