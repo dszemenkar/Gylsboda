@@ -6,27 +6,31 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/placeImage"
+        android:id="@+id/imageView3"
         android:layout_width="0dp"
-        android:layout_height="160dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/download" />
+        app:srcCompat="@drawable/view" />
 
     <TextView
         android:id="@+id/placeName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:layout_height="47dp"
         android:text="Start"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/placeImage"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

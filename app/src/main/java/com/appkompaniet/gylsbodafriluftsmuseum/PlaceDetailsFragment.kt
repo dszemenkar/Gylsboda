@@ -43,7 +43,8 @@ savedInstanceState:Bundle?):View? {
 
             nameText.text = place.name
             descriptionText.text = place.description
-            likeText.text = likes.toString() + " gillar detta."
+            val likeMessage = getString(R.string.likes_text, likes.toString())
+            likeText.text = likeMessage
             Glide.with(imageView).load(pImage).into(imageView)
 
         })
@@ -54,7 +55,8 @@ savedInstanceState:Bundle?):View? {
             val pDesc = descriptionText.text.toString()
             likes = likes + 1
             val updatedPlace = Place(pId, pName, pDesc, likes, pImage)
-            likeText.text = likes.toString() + " gillar detta."
+            val likeMessage = getString(R.string.likes_text, likes.toString())
+            likeText.text = likeMessage
             viewModel.updatePlace(updatedPlace)
         }
 

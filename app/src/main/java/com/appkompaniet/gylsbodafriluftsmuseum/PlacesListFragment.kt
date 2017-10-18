@@ -48,7 +48,6 @@ savedInstanceState:Bundle?):View? {
             val place = places[position]
             holder?.placeId = place.id
             holder?.placeName?.text = place.name
-            //Glide.with(holder?.itemView).load(place.image).into(holder?.placeImage)
         }
 
         override fun getItemCount(): Int = places.size
