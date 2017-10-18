@@ -13,6 +13,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_places_list.*
 
 
@@ -47,7 +48,7 @@ savedInstanceState:Bundle?):View? {
             val place = places[position]
             holder?.placeId = place.id
             holder?.placeName?.text = place.name
-
+            //Glide.with(holder?.itemView).load(place.image).into(holder?.placeImage)
         }
 
         override fun getItemCount(): Int = places.size

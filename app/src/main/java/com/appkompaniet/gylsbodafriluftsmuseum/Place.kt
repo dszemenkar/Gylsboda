@@ -26,7 +26,9 @@ class PlaceViewModel : ViewModel(){
         return placeRepository.loadPlace(id)
     }
 
-    //fun savePlace(id: String):
+    fun updatePlace(place: Place){
+        placeRepository.updatePlace(place)
+    }
 
 
     /**init {

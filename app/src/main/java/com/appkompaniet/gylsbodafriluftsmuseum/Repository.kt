@@ -72,7 +72,7 @@ class PlaceRepository{
         }
         return mediatorLiveData
     }
-    fun savePlace(place: Place) {
+    fun updatePlace(place: Place) {
         val firebasePlace = FirebasePlace(place.name, place.description, place.likes, place.image)
         when(place.id){
             "" -> return

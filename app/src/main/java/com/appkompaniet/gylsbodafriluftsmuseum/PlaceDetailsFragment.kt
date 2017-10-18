@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_place_details.*
 
 
@@ -18,6 +19,7 @@ import kotlinx.android.synthetic.main.fragment_place_details.*
 
      var placeId: String = ""
      var likes: Int = 0
+     var pImage: String = ""
 
      override fun onCreateView(inflater:LayoutInflater?, container:ViewGroup?,
 savedInstanceState:Bundle?):View? {
@@ -37,22 +39,24 @@ savedInstanceState:Bundle?):View? {
             val place: Place = it ?: Place("", "", "", 0, "")
             placeId = place.id
             likes = place.likes
+            pImage = place.image
 
             nameText.text = place.name
             descriptionText.text = place.description
             likeText.text = likes.toString() + " gillar detta."
+            Glide.with(imageView).load(pImage).into(imageView)
 
         })
-
-/**
+        //(resources.getDrawable(R.drawable.download, context?.theme))
 
         likebutton.setOnClickListener {
             val pName = nameText.text.toString()
             val pDesc = descriptionText.text.toString()
             likes = likes + 1
-            val updatedPlace = Place(pName,pDesc,likes)
-            //viewModel.(updatedPlace)
-        }*/
+            val updatedPlace = Place(pId, pName, pDesc, likes, pImage)
+            likeText.text = likes.toString() + " gillar detta."
+            viewModel.updatePlace(updatedPlace)
+        }
 
     }
 }// Required empty public constructor
