@@ -18,13 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-        /**
-        if(savedInstanceState == null){
-            supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.fragment_container, PlacesListFragment())
-                    .commit()
-        }*/
     }
 
     override fun onStart() {

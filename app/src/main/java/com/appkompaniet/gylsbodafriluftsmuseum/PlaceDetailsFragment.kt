@@ -32,8 +32,6 @@ savedInstanceState:Bundle?):View? {
 
         val viewModel = ViewModelProviders.of(activity).get(PlaceViewModel::class.java)
 
-        //val place = viewModel.place
-
         val pId = arguments.getString("placeId")
         viewModel.loadPlace(pId).observe(this, Observer {
             val place: Place = it ?: Place("", "", "", 0, "")
@@ -48,7 +46,7 @@ savedInstanceState:Bundle?):View? {
             Glide.with(imageView).load(pImage).into(imageView)
 
         })
-        //(resources.getDrawable(R.drawable.download, context?.theme))
+
 
         likebutton.setOnClickListener {
             val pName = nameText.text.toString()
