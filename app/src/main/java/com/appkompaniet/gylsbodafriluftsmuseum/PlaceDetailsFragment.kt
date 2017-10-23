@@ -4,14 +4,16 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_place_details.*
+import java.util.*
 
 
- class PlaceDetailsFragment:Fragment() {
+class PlaceDetailsFragment:Fragment() {
 
      companion object {
          val TAG = "PlaceDetailsFragment"
@@ -34,17 +36,25 @@ savedInstanceState:Bundle?):View? {
 
         val pId = arguments.getString("placeId")
         viewModel.loadPlace(pId).observe(this, Observer {
-            val place: Place = it ?: Place("", "", "", 0, "")
+            val place: Place = it ?: Place("", "", "", 0, "", "", "", 0.0, 0.0)
             placeId = place.id
             likes = place.likes
             pImage = place.image
 
             nameText.text = place.name
-            descriptionText.text = place.description
-            val likeMessage = getString(R.string.likes_text, likes.toString())
-            likeText.text = likeMessage
-            Glide.with(imageView).load(pImage).into(imageView)
+            val lang = Locale.getDefault().getDisplayLanguage()
+            if(lang == "English"){
+                descriptionText.text = place.description_en
+            }
+            else if(lang == "German"){
+                descriptionText.text = place.description_de
+            }
+            else{
+                descriptionText.text = place.description
+            }
 
+            likeText.text = getString(R.string.likes_text, likes.toString())
+            Glide.with(imageView).load(pImage).into(imageView)
         })
 
 
@@ -53,8 +63,7 @@ savedInstanceState:Bundle?):View? {
             val pDesc = descriptionText.text.toString()
             likes = likes + 1
             val updatedPlace = Place(pId, pName, pDesc, likes, pImage)
-            val likeMessage = getString(R.string.likes_text, likes.toString())
-            likeText.text = likeMessage
+            likeText.text = getString(R.string.likes_text, likes.toString())
             viewModel.updatePlace(updatedPlace)
         }
 

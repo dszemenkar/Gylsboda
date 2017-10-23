@@ -2,6 +2,7 @@
     <string name="app_name">Gylsboda friluftsmuseum</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="likes_text">%s gillar detta.</string>
+    <string name="internet_failed">You will need internet connection. Try again.</string>
+    <string name="likes_text">%s likes this.</string>
+    <string name="likes_button">Like</string>
 </resources>

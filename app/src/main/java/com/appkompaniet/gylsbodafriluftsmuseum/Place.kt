@@ -30,16 +30,4 @@ class PlaceViewModel : ViewModel(){
         placeRepository.updatePlace(place)
     }
 
-
-    /**init {
-        places = LinkedList<Place>()
-
-        for (i in 0 .. 20){
-            places += Place("Transformatorn", "Denna byggnad uppfördes", 0)
-        }
-    }*/
-    /**fun updatePlace(place: Place){
-        this.place = place
-        Log.d(TAG, "Updated place with ${place.likes}")
-    }*/
 }

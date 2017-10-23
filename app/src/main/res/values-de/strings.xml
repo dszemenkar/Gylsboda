@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gylsboda friluftsmuseum</string>
+    <string name="likes_text">%s gefällt das.</string>
+    <string name="internet_failed">Sie benötigen eine Internetverbindung. Versuch es noch einmal.</string>
+    <string name="likes_button">Mögen</string>
+</resources>

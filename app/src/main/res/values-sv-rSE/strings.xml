@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gylsboda friluftsmuseum</string>
+    <string name="likes_text">%s gillar detta.</string>
+    <string name="internet_failed">Kan inte hitta internetuppkoppling. Testa igen.</string>
+    <string name="likes_button">Gilla</string>
+</resources>

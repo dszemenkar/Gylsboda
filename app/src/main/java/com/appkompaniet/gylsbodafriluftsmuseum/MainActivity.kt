@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
                     } else {
                         // If sign in fails, display a message to the user.
-                        Toast.makeText(this, "You need internet connection for this application. Be sure to connect to Internet.", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.internet_failed), Toast.LENGTH_LONG).show()
                     }
 
                 })

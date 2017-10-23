@@ -42,6 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
             <Button
                 android:id="@+id/likebutton"
                 style="@style/Widget.AppCompat.Button.Colored"
@@ -49,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Gilla"
+                android:text="@string/likes_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
